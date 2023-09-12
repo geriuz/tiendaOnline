@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Ubuntu:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* SECCIÓN BANNER */
+
+.banner {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/assets/img/web_banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bannerTexts {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bannerTexts h1 {
+    font-size: 6rem;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.bannerTexts p {
+    font-size: 1rem;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* SECCIÓN LACTEOS */
+
+.containerLacteos {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Milk milkDerivatives";
+  }
+  .containerLacteos h2 {
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .Milk { grid-area: Milk; }
+  
+  .milkDerivatives {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Yogurt Kumis"
+      "Queso Suero";
+    grid-area: milkDerivatives;
+  }
+  
+  .Yogurt { grid-area: Yogurt; }
+  .Kumis { grid-area: Kumis; }
+  .Queso { grid-area: Queso; }
+  .Suero { grid-area: Suero; }
+  
+/* SECCIÓN CARNICOS */
+
+  .containerCarnicos {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Butifarra Chorizo Salchichon Salchicha";
+  }
+
+  .containerCarnicos h2 {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .Butifarra { grid-area: Butifarra; }
+  .Chorizo { grid-area: Chorizo; }
+  .Salchichon { grid-area: Salchichon; }
+  .Salchicha { grid-area: Salchicha; }
+
+/* SECCIÓN PANADERIA */
+
+.containerPanaderia {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "variosPanaderia torta";
+  }
+  
+  .containerPanaderia h2 {
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .variosPanaderia {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "panMantequilla panQueso panPinita"
+      "galleta cupcake kequi";
+    grid-area: variosPanaderia;
+  }
+  
+  .panMantequilla { grid-area: panMantequilla; }
+  .panQueso { grid-area: panQueso; }
+  .panPinita { grid-area: panPinita; }
+  .galleta { grid-area: galleta; }
+  .cupcake { grid-area: cupcake; }
+  .kequi { grid-area: kequi; }
+  .torta { grid-area: torta; }
+  
+/* OTROS PRODUCTOS */
+
+.containerOtroProductos {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "pescados aves cerdos";
+  }
+
+  .containerOtroProductos h2 {
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .pescados { grid-area: pescados; }
+  .aves { grid-area: aves; }
+  .cerdos { grid-area: cerdos; }
+  
