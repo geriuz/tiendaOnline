@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5 {
 
 .containerNav { 
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(9, 1fr);
   grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -76,7 +76,7 @@ box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
 }
 
 .btnMenu {
-  padding: 15px 40px;
+  padding: 15px 30px;
   background: orange;
   border-radius: 10px;
   text-decoration: none;
@@ -84,7 +84,7 @@ box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.25);
 }
 
 .btnMenu:hover {
-  padding: 15px 40px;
+  padding: 15px 30px;
   background: rgb(255, 118, 39);
   border-radius: 10px;
   text-decoration: none;
